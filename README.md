@@ -55,33 +55,24 @@ The scraping process follows these steps:
 
 ## Installation
 
-Install the required libraries:
-
-```bash
-pip install requests beautifulsoup4
-```
-
-## How to Run
-
-1. Clone this repository:
+Clone the repository:
 
 ```bash
 git clone https://github.com/Matin-python/Web-Scraper.git
 ```
 
-2. Navigate to the project directory:
+Navigate to the project directory:
 
 ```bash
 cd Web-Scraper
 ```
 
-3. Open the Jupyter Notebook:
+Install the required libraries:
 
 ```bash
-jupyter notebook
+pip install -r requirements.txt
 ```
 
-4. Run the notebook cells to retrieve and extract information from the target webpage.
 
 ## Limitations
 
