@@ -139,6 +139,22 @@ After a successful scraping process, the following files are generated:
 The extracted information is also displayed as a Pandas DataFrame inside the notebook.
 
 
+## Project Structure
+
+```text
+Web-Scraper/
+│
+├── Web-Scraper.ipynb
+├── README.md
+├── requirements.txt
+│
+├── scraped_data.csv
+├── scraped_data.xlsx
+└── scraper.log
+```
+
+*Note: Output files are generated when the scraper runs successfully.*
+
 
 
 ## Limitations
@@ -148,16 +164,6 @@ The extracted information is also displayed as a Pandas DataFrame inside the not
 - Website structures and CSS classes may change over time.
 - Some websites restrict automated requests or require additional authentication.
 
-## Project Structure
-
-```text
-Web-Scraper/
-│
-├── Web-Scraper.ipynb
-├── README.md
-├── LICENSE.md
-└── requirements.txt
-```
 
 ## Future Improvements
 
