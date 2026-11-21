@@ -101,6 +101,32 @@ The program will ask you to enter the following information:
 Optional selectors can be left empty when the corresponding information is not needed.
 
 
+## Example
+
+The project was tested using the following demo website:
+
+[WebScraper.io – E-commerce Laptops](https://webscraper.io/test-sites/e-commerce/static/computers/laptops)
+
+Example configuration:
+
+```python
+URL = "https://webscraper.io/test-sites/e-commerce/static/computers/laptops"
+
+card_selector = "div.thumbnail"
+title_selector = "a.title"
+price_selector = "h4.price"
+description_selector = "p.description"
+link_selector = "a.title"
+image_selector = "img"
+next_page_selector = "a[rel='next']"
+
+max_pages = 3
+```
+
+The scraper extracts product titles, prices, descriptions, product links, and image URLs.
+
+
+
 
 
 ## Limitations
