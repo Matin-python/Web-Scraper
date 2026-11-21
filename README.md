@@ -126,6 +126,18 @@ max_pages = 3
 The scraper extracts product titles, prices, descriptions, product links, and image URLs.
 
 
+## Output Files
+
+After a successful scraping process, the following files are generated:
+
+| File | Description |
+|---|---|
+| `scraped_data.csv` | Collected data in CSV format |
+| `scraped_data.xlsx` | Collected data in Excel format |
+| `scraper.log` | Log file containing scraping activities and errors |
+
+The extracted information is also displayed as a Pandas DataFrame inside the notebook.
+
 
 
 
