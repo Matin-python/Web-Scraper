@@ -156,6 +156,18 @@ Web-Scraper/
 *Note: Output files are generated when the scraper runs successfully.*
 
 
+## Requirements
+
+The project requires the following Python libraries:
+
+```text
+requests
+beautifulsoup4
+pandas
+openpyxl
+```
+
+
 
 ## Limitations
 
