@@ -1,12 +1,14 @@
 # Web Scraper
 
-A simple Python web scraping project that uses **Requests** and **BeautifulSoup** to retrieve, parse, and extract information from web pages.
+A configurable web scraping project built with Python, Requests, BeautifulSoup, and Pandas. This tool extracts structured information from websites using custom CSS selectors and supports pagination, data cleaning, logging, and exporting collected data to CSV and Excel files.
 
 ## Overview
 
-This project demonstrates the fundamentals of web scraping with Python. It sends HTTP requests to websites, retrieves their HTML content, and extracts specific information using HTML tags and CSS classes.
+This project is designed to collect information from websites without requiring changes to the source code for every new website.
 
-The project provides a starting point for collecting and processing data from websites.
+Users can provide a website URL and specify CSS selectors for the information they want to extract. The scraper then collects the matching data, processes it using Pandas, and saves the results in convenient file formats.
+
+The project was tested using the [WebScraper.io E-commerce Demo](https://webscraper.io/test-sites/e-commerce/static), which provides sample product listings for practicing web scraping.
 
 ## Features
 
