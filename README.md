@@ -39,12 +39,19 @@ The project was tested using the [WebScraper.io E-commerce Demo](https://webscra
 
 ## How It Works
 
-1. Specify the URL of the target webpage.
-2. Send an HTTP GET request using Requests.
-3. Retrieve the HTML content of the webpage.
-4. Parse the HTML using BeautifulSoup.
-5. Find specific HTML elements using tags and CSS classes.
-6. Extract and display the selected information.
+The scraping process follows these steps:
+
+1. The user enters the target website URL.
+2. The user provides CSS selectors for the desired information.
+3. The scraper sends an HTTP request using a Requests session.
+4. BeautifulSoup parses the returned HTML content.
+5. The scraper identifies matching elements using the provided CSS selectors.
+6. Extracted information is stored in a list of dictionaries.
+7. If pagination is enabled, the scraper follows the next-page link until the page limit is reached or no further page is available.
+8. Pandas converts the collected information into a DataFrame.
+9. Duplicate and empty records are removed, and text is cleaned.
+10. The results are exported to CSV and Excel files.
+
 
 ## Installation
 
