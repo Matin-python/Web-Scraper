@@ -74,6 +74,35 @@ pip install -r requirements.txt
 ```
 
 
+## How to Run
+
+Open the Jupyter Notebook:
+
+```bash
+jupyter notebook Web-Scraper.ipynb
+```
+
+Run the notebook cells in order.
+
+The program will ask you to enter the following information:
+
+| Input | Description |
+|---|---|
+| Website URL | The URL of the target webpage |
+| Card selector | CSS selector for each item or product |
+| Title selector | CSS selector for the item's title |
+| Price selector | CSS selector for its price |
+| Description selector | CSS selector for its description |
+| Link selector | CSS selector for its link |
+| Image selector | CSS selector for its image |
+| Next-page selector | CSS selector for the next-page link |
+| Maximum pages | Maximum number of pages to scrape |
+
+Optional selectors can be left empty when the corresponding information is not needed.
+
+
+
+
 ## Limitations
 
 - Extracted information depends on the HTML structure of the target website.
