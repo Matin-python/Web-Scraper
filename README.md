@@ -10,20 +10,32 @@ Users can provide a website URL and specify CSS selectors for the information th
 
 The project was tested using the [WebScraper.io E-commerce Demo](https://webscraper.io/test-sites/e-commerce/static), which provides sample product listings for practicing web scraping.
 
+
 ## Features
 
-- Retrieve webpage content using HTTP GET requests.
-- Parse HTML documents using BeautifulSoup.
-- Find HTML elements by their tags and CSS classes.
-- Extract text from selected webpage elements.
-- Display extracted information in the terminal or Jupyter Notebook.
+- **Custom Website URL:** Enter the URL of the website you want to scrape.
+- **Custom CSS Selectors:** Specify selectors for product cards, titles, prices, descriptions, links, and images.
+- **Pagination Support:** Automatically navigate through multiple pages using a next-page link selector.
+- **Configurable Page Limit:** Choose the maximum number of pages to scrape.
+- **HTTP Request Handling:** Handle request failures, HTTP errors, and connection problems.
+- **Duplicate Removal:** Identify and remove duplicate records.
+- **Data Cleaning:** Normalize extracted text and remove empty records.
+- **Image URL Extraction:** Collect image URLs without downloading the image files.
+- **Logging System:** Record scraping activities, errors, and progress in a log file.
+- **CSV Export:** Save collected information as a CSV file.
+- **Excel Export:** Export collected information to an Excel spreadsheet.
+- **Scraping Summary:** Display the total number of pages visited and records collected.
 
-## Technologies
+
+## Technologies Used
 
 - **Python** – Main programming language.
-- **Requests** – Sending HTTP requests and retrieving webpage content.
-- **BeautifulSoup4** – Parsing HTML and extracting information.
-- **Jupyter Notebook** – Writing and executing the code.
+- **Requests** – Sending HTTP requests and retrieving website content.
+- **BeautifulSoup** – Parsing HTML and extracting information using CSS selectors.
+- **Pandas** – Organizing, cleaning, and processing collected data.
+- **OpenPyXL** – Supporting Excel file export.
+- **Logging** – Tracking scraping activities and errors.
+
 
 ## How It Works
 
