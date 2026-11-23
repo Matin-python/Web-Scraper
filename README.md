@@ -178,6 +178,11 @@ openpyxl
 - Pagination depends on the availability of a valid next-page link.
 
 
+## Responsible Web Scraping
+
+Always respect the target website's terms of service, robots.txt rules, and access restrictions. Use reasonable request intervals and avoid collecting private or restricted information.
+
+
 ## Future Improvements
 
 Potential improvements include:
