@@ -168,22 +168,27 @@ openpyxl
 ```
 
 
-
 ## Limitations
 
-- Extracted information depends on the HTML structure of the target website.
-- Some websites load content dynamically using JavaScript.
-- Website structures and CSS classes may change over time.
-- Some websites restrict automated requests or require additional authentication.
+- The scraper works with information available in the HTML returned by the website.
+- Websites that render content using JavaScript may require additional tools such as Selenium or Playwright.
+- CSS selectors may need to be adjusted when a website changes its HTML structure.
+- Some websites restrict automated requests or return access-denied responses.
+- Extracting image URLs does not download the actual image files.
+- Pagination depends on the availability of a valid next-page link.
 
 
 ## Future Improvements
 
-- Extract structured information such as titles, prices, and descriptions.
-- Store extracted data in Pandas DataFrames.
-- Export collected information to CSV or Excel files.
-- Implement error handling for failed HTTP requests.
-- Support more flexible data extraction and filtering.
+Potential improvements include:
+
+- JavaScript rendering support using Playwright.
+- Downloading images locally.
+- Database integration using SQLite.
+- More advanced filtering and search options.
+- Support for extracting additional product attributes.
+- Improved data validation and error recovery.
+
 
 
 ## Contributing
